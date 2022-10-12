@@ -9,26 +9,40 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
     <div>
         <!-- header -->
         <header>
-            BLOOMTECH BAR AND GRILL
-
-            <!-- nav -->
-            Menu
-            Reservations
-            Special Offers
-            Contact
+            <header>
+                <div class = "Top Photo">
+                    <section class = "veryTop">
+                    <h1><a href = "index.html">BLOOMTECH BAR AND GRILL</a></h1>
+    
+                    <!-- nav -->
+                    <nav class = "headerButtons">
+                    <button><a href = "menu.html"></a>Menu</button>
+                    <button><a href = "reservations.html"></a>Reservations</button>
+                    <button><a href = "Special Offers.html"></a>Special Offers</button>
+                    <button><a href = "contact.html"></a>Contact</button>
+                </nav>
+                <nav class="Social-Media-Buttons">
+                    <button><a href="#" class="fa fa-facebook"></a></button>
+                    <button><a href="#" class="fa fa-twitter"></a></button>
+                    <button><a href="#" class="fa fa-instagram"></a></button>
+                </nav>
+                    </section>
+                </div>
+            </header>
         </header>
 
         <!-- spacer -->
         <div class="spacer"></div>
 
         <!-- menu -->
-        <article class="menu">
+        <article class="menu container">
             Food & Drink
 
                 Drinks
@@ -117,17 +131,39 @@
         <div class="spacer-sm"></div>
 
         <!-- footer -->
-        <footer>
-            <!-- email signup -->
-            Join our mailing list!
-            Sign Up
-            <!-- nav -->
-            Menu
-            Reservations
-            Special Offers
-            Contact
-            <!-- copyright -->
-            ©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.
+        <footer class = "bottom">
+			<!-- email signup -->
+			<form action="action_page.php">
+				<div class="container">
+				  <h4>Join our mailing list!</h4>
+				  </div>
+				<div class="container" >
+					<input type="text" placeholder="Name" name="name" required>
+					<input type="text" placeholder="Email address" name="mail" required>
+					<label>
+					  
+				  </div>
+				
+				  <div class="container">
+					<input type="submit" value="Sign Up" >
+				  </div>
+				</form>
+			
+			
+			<!-- nav -->
+			<nav class = "footer-nav" style="background-image:url('data:image/jpeg;base64,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') ;">
+				<button><a href = "menu.html"></a>Menu</button>
+				<button><a href = "menu.html"></a>Reservations</button>
+				<button><a href = "menu.html"></a>Special Offers</button>
+				<button><a href = "menu.html"></a>Contact</button>
+			</nav>
+			
+			<!-- copyright -->
+			
+			<p class = "copyright">©2022<a href = "http://127.0.0.1:5500/index.html">BloomTech Restaurant Group, Inc.</a></p>
+			<!--©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.</small>-->
+		</footer>
+            
         </footer>
     </div>
 </body>
